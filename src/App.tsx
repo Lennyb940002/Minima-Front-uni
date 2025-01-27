@@ -140,7 +140,8 @@ function App() {
             <img src={logo} alt="Logo" className="h-48 w-48" />
           </div>
           <h2 className="text-2xl font-bold text-white mb-6 text-center">
-            Minima
+            Minima Vercel
+            
           </h2>
 
           {submitStatus === "error" && (
