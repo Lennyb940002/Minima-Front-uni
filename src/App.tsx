@@ -55,7 +55,7 @@ const NewsletterSection = ({ email, setEmail, handleSubmit, isSubmitting, submit
       <div className="flex flex-col items-center text-center mb-14 mt-44">
         <img src={logo} alt="Logo" className="h-48 w-48" />
       </div>
-      <h2 className="text-2xl font-bold text-white mb-6">Minima Vercel</h2>
+      <h2 className="text-2xl font-bold text-white mb-6">Minima</h2>
 
       {submitStatus === "error" && (
         <div className="mb-4 p-3 bg-red-500/10 border border-red-500/50 rounded-lg text-red-500 text-sm">
