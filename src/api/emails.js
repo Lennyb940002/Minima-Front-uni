@@ -9,12 +9,11 @@ const handleSubmit = async (event) => {
 
   try {
     const response = await fetch("https://minima-back-uni.vercel.app/api/emails", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email }),
-    });
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ email }),
+});
+
 
     console.log("API response status:", response.status);
 
