@@ -13,7 +13,8 @@ function App() {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/emails`, {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL.replace(/\/$/, ''); // Enlever le slash à la fin si présent
+      const response = await fetch(`${backendUrl}/api/emails`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
